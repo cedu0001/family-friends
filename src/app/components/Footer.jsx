@@ -5,12 +5,14 @@ import { FiUser } from "react-icons/fi";
 
 const Footer = () => {
 	return (
-		<div className="flex gap-[4em] items-center justify-center bg-[rgba(255, 255, 255, 0.2)]">
-			<FiHome size={24} color="#ACACAC" />
-			<FaRegStar size={24} color="#ACACAC" />
-			<IoChatbubbleOutline size={24} color="#ACACAC" />
-			<FiUser size={24} color="#ACACAC" />
-		</div>
+		<footer className="fixed bottom-0 left-0 w-full backdrop-blur-xl pb-6 p-2 bg-[rgba(255, 255, 255, 0.2)] rounded-t-xl">
+			<div className="flex gap-18 py-2 justify-center">
+				<FiHome size={24} color="#ACACAC" />
+				<FaRegStar size={24} color="#ACACAC" />
+				<IoChatbubbleOutline size={24} color="#ACACAC" />
+				<FiUser size={24} color="#ACACAC" />
+			</div>
+		</footer>
 	);
 };
 
