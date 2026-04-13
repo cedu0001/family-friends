@@ -22,7 +22,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
-			<body className="mx-3 my-5 min-h-full flex flex-col bg-[rgba(255,255,255,0.2)]">
+			<body className="mx-6 my-8 min-h-full flex flex-col bg-[rgba(255,255,255,0.2)]">
 				<Header />
 				{children}
 				<Footer />
