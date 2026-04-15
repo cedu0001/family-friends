@@ -3,7 +3,7 @@ import { CiStar } from "react-icons/ci";
 
 const BreedCard = ({ breedGroup, origin, image }) => {
 	return (
-		<div className=" bg-white rounded-2xl shadow mb-4 w-fit">
+		<div className=" bg-white rounded-2xl shadow mb-4 w-fit pb-2">
 			<div className="relative">
 				<CiStar size={24} color="white" className="bg-[rgba(254,254,254,0.25)] absolute m-2 rounded-full right-0" />
 				<Image
