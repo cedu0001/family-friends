@@ -1,5 +1,4 @@
 import BreedCard from "./BreedCard";
-import Link from "next/link";
 
 const Breedlist = () => {
 	return <FetchBreed />;
@@ -17,9 +16,7 @@ const FetchBreed = async () => {
 		return breeds.map((breed) => {
 			return (
 				<div key={breed.id} className="relative">
-					<Link href={`/detailview/${breed.id}`}>
-						<BreedCard key={breed.id} breedGroup={breed.name} origin={breed.origin} image={breed.image.url} />
-					</Link>
+					<BreedCard id={breed.id} breedGroup={breed.name} origin={breed.origin} image={breed.image.url} />
 				</div>
 			);
 		});

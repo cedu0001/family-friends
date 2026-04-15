@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Searchbar from "./components/Searchbar";
 import BreedList from "./components/BreedList";
 
