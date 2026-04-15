@@ -6,7 +6,7 @@ const BreedSingleView = () => {
 	return (
 		<div>
 			<div className="relative">
-				<CiStar size={24} color="black" className="bg-[rgba(254,254,254,0.25)] absolute m-2 rounded-full right-0" />
+				<CiStar size={24} color="white" className="bg-[rgba(254,254,254,0.25)] absolute m-2 rounded-full right-0" />
 				<IoIosArrowBack size={24} color="black" className="bg-[rgb(255,255,255)] absolute m-2 rounded-full" />
 				<div className="absolute m-2 bottom-0 bg-[rgba(254,254,254,0.2)] flex p-2 rounded-2xl backdrop-blur-xl">
 					<Image
