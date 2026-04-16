@@ -1,11 +1,10 @@
 import Image from "next/image";
-import { CiStar } from "react-icons/ci";
 import { IoIosArrowBack } from "react-icons/io";
-
 import { Suspense } from "react";
 
 import Link from "next/link";
 import Temper from "@/app/components/Temper";
+import Favorit from "@/app/components/FavoritElement";
 
 const DetailView = async ({ params }) => {
 	const { id } = await params;
@@ -21,11 +20,7 @@ const DetailView = async ({ params }) => {
 			<Suspense fallback={<div>Loading your clicked dog 🐶...</div>}>
 				<div>
 					<div className="relative">
-						<CiStar
-							size={24}
-							color="white"
-							className="bg-[rgba(254,254,254,0.25)] absolute m-2 rounded-full right-0"
-						/>
+						<Favorit id={id} />
 						<Link href={"/"}>
 							<IoIosArrowBack
 								size={24}
@@ -55,7 +50,7 @@ const DetailView = async ({ params }) => {
 					<div className="my-3">
 						<h3 className="text-[#333333] text-3xl font-bold">{breed.name}</h3>
 					</div>
-					<Temper />
+					<Temper tempStr={breed.temperament}></Temper>
 					<dl className="text-[#333333] my-5">
 						<dt className="text-xs opacity-50 font-medium">Breed description</dt>
 						<dd className="text-base mb-5">{breed.description}</dd>
